@@ -3,7 +3,7 @@ class SocialSecurityNumberValidator < ActiveModel::EachValidator
 
   def validate_each(record, attr_name, value)
     unless value =~ SSN_REGEX
-      record.errors[attr_name] << I18n.t("validators.ssn")
+      record.errors.add(attr_name, I18n.t("validators.ssn"))
     end
   end
 end
