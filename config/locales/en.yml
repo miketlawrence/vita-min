@@ -1366,6 +1366,8 @@ en:
             A message with your code has been sent to:
           verification_code_label: Enter 6 digit code
           error_message: "Incorrect verification code."
+        filing_status:
+          title: How will you be filing your tax return?
     consent_pages:
       consent_to_use:
         title: Consent to Use

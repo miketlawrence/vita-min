@@ -2,6 +2,7 @@ class CtcQuestionNavigation
   include ControllerNavigation
 
   FLOW = [
+    # Basic info
     Ctc::Questions::OverviewController,
     Ctc::Questions::PersonalInfoController,
     Ctc::Questions::ContactPreferenceController,
@@ -11,7 +12,10 @@ class CtcQuestionNavigation
     Ctc::Questions::ConsentController,
     Ctc::Questions::PlaceholderQuestionController,
 
-    # payments information
+    # Filing status
+    Ctc::Questions::FilingStatusController,
+
+    # Bank and mailing info
     Ctc::Questions::RefundPaymentController,
     Ctc::Questions::DirectDepositController,
     Ctc::Questions::RoutingNumberController,
