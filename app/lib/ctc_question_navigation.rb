@@ -17,7 +17,9 @@ class CtcQuestionNavigation
     Ctc::Questions::StimulusOneReceivedController,
     Ctc::Questions::StimulusTwoController,
     Ctc::Questions::StimulusTwoReceivedController,
+    Ctc::Questions::StimulusReceivedController,
     Ctc::Questions::PlaceholderQuestionController,
+    Ctc::Questions::StimulusOwedController,
 
     # payments information
     Ctc::Questions::RefundPaymentController,

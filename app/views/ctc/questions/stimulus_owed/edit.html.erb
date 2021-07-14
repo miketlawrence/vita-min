@@ -1,0 +1,24 @@
+<% @main_question = t("views.ctc.questions.stimulus_owed.title") %>
+
+<% content_for :page_title, @main_question %>
+
+<% content_for :form_card do %>
+  <h1 class="h2"><%= @main_question %></h1>
+
+  <div class="review-box spacing-below-35">
+    <div class="review-box__title spacing-below-15">
+      <h2><%= t("views.ctc.questions.stimulus_owed.amount_received") %></h2>
+      <%= link_to t("general.edit").downcase, questions_stimulus_one_path, class: "review-box__edit" %>
+    </div>
+    <p class="spacing-below-15"><%= t("views.ctc.questions.stimulus_owed.eip_one") %>: <%= number_to_currency(current_intake.recovery_rebate_credit_amount_1, precision: 0) %></p>
+    <p class="spacing-below-0"><%= t("views.ctc.questions.stimulus_owed.eip_two") %>: <%= number_to_currency(current_intake.recovery_rebate_credit_amount_2, precision: 0) %></p>
+  </div>
+
+  <p class="text--bold">
+    <%= t("views.ctc.questions.stimulus_owed.eligible_for") %>
+  </p>
+  <div class="h2">$ TBD</div>
+  <p class="spacing-below-35"><%= t("views.ctc.questions.stimulus_owed.correction") %></p>
+
+  <%= link_to t("general.continue"), questions_placeholder_question_path, class: "button button--wide button--primary text--centered" %>
+<% end %>
