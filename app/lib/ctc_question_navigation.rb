@@ -14,6 +14,7 @@ class CtcQuestionNavigation
 
     # Filing status
     Ctc::Questions::FilingStatusController,
+    Ctc::Questions::SpouseSsnController,
 
     # Bank and mailing info
     Ctc::Questions::RefundPaymentController,
